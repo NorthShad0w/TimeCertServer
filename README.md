@@ -18,16 +18,16 @@ faketime '2008-12-25 08:15:42' openssl x509 -extfile extfile.txt -extensions v3_
 cat ca.crt >> certificate.pem
 ```
 
-将ca.crt作为跟证书安装到windows下
+将ca.crt作为根证书安装到windows下
 
-## 2.启动
+### 2.启动
 
 ```bash
 docker build .
 docker run -p 8080:8080 --rm -it --name timestamp <id-of-your-image>
 ```
 
-## 3.打时间戳
+### 3.打时间戳
 
 ```bat
 signtool.exe timestamp /t "http://your-server-ip-port/TSA/2011-04-01T00:00:00“ test.exe
