@@ -1,0 +1,10 @@
+.vscode/
+bin/
+obj/
+ca.crt
+ca.csr
+ca.srl
+cakey.pem
+certificate.csr
+certificate.pem
+private.key

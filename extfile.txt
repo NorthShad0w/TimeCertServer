@@ -1,0 +1,4 @@
+[ v3_req_p ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = critical, codeSigning, timeStamping
